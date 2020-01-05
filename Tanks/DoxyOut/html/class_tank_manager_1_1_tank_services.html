@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TANKS!AIバトル: TankManager.TankServices クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.extra.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TANKS!AIバトル
+   </div>
+   <div id="projectbrief">Unity公式チュートリアル「TANKS!」をベースにAI対戦ができるようにしたプロジェクト</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_tank_manager_1_1_tank_services.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="class_tank_manager_1_1_tank_services-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">TankManager.TankServices クラス<div class="ingroups"><a class="el" href="group___a_i_services.html">AI用サービスモジュール</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>戦車AI用サービスクラス  
+ <a href="class_tank_manager_1_1_tank_services.html#details">[詳解]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ac6d6e0eb543c78e33bc81b37cc1675d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_tank_controller.html">TankController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tank_manager_1_1_tank_services.html#ac6d6e0eb543c78e33bc81b37cc1675d6">GetTank</a> (int playerNumber)</td></tr>
+<tr class="memdesc:ac6d6e0eb543c78e33bc81b37cc1675d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定プレイヤー番号の戦車を取得する  <a href="#ac6d6e0eb543c78e33bc81b37cc1675d6">[詳解]</a><br /></td></tr>
+<tr class="separator:ac6d6e0eb543c78e33bc81b37cc1675d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0460df080d7db4eff50270a9bfdad567"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tank_manager_1_1_tank_services.html#a0460df080d7db4eff50270a9bfdad567">DistanceTo</a> (<a class="el" href="class_tank_controller.html">TankController</a> other)</td></tr>
+<tr class="memdesc:a0460df080d7db4eff50270a9bfdad567"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定戦車との距離を求める  <a href="#a0460df080d7db4eff50270a9bfdad567">[詳解]</a><br /></td></tr>
+<tr class="separator:a0460df080d7db4eff50270a9bfdad567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a501bf6996e62d626f5c05c91e1176204"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tank_manager_1_1_tank_services.html#a501bf6996e62d626f5c05c91e1176204">AngleTo</a> (<a class="el" href="class_tank_controller.html">TankController</a> other)</td></tr>
+<tr class="memdesc:a501bf6996e62d626f5c05c91e1176204"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定戦車がいる方向を求める  <a href="#a501bf6996e62d626f5c05c91e1176204">[詳解]</a><br /></td></tr>
+<tr class="separator:a501bf6996e62d626f5c05c91e1176204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76609dc547d30de8fac06eb2167ec05d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_tank_controller.html">TankController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tank_manager_1_1_tank_services.html#a76609dc547d30de8fac06eb2167ec05d">GetNearestTank</a> ()</td></tr>
+<tr class="memdesc:a76609dc547d30de8fac06eb2167ec05d"><td class="mdescLeft">&#160;</td><td class="mdescRight">一番近い敵戦車を取得する  <a href="#a76609dc547d30de8fac06eb2167ec05d">[詳解]</a><br /></td></tr>
+<tr class="separator:a76609dc547d30de8fac06eb2167ec05d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeff0939c4123ef6fa336803e80098f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_shell_explosion.html">ShellExplosion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tank_manager_1_1_tank_services.html#afeff0939c4123ef6fa336803e80098f7">GetNearestShell</a> ()</td></tr>
+<tr class="memdesc:afeff0939c4123ef6fa336803e80098f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">一番近い敵の砲弾を取得する  <a href="#afeff0939c4123ef6fa336803e80098f7">[詳解]</a><br /></td></tr>
+<tr class="separator:afeff0939c4123ef6fa336803e80098f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab98e3f27dbf3dbfaebfb5231dd8a52ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tank_manager_1_1_tank_services.html#ab98e3f27dbf3dbfaebfb5231dd8a52ea">IsMine</a> (<a class="el" href="class_shell_explosion.html">ShellExplosion</a> shell)</td></tr>
+<tr class="memdesc:ab98e3f27dbf3dbfaebfb5231dd8a52ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定砲弾が自分が撃ったモノか否か  <a href="#ab98e3f27dbf3dbfaebfb5231dd8a52ea">[詳解]</a><br /></td></tr>
+<tr class="separator:ab98e3f27dbf3dbfaebfb5231dd8a52ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:a9d5a96a6f6e32452823c112d7aa8e483"><td class="memItemLeft" align="right" valign="top"><a id="a9d5a96a6f6e32452823c112d7aa8e483"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tank_manager_1_1_tank_services.html#a9d5a96a6f6e32452823c112d7aa8e483">PlayerNumber</a> =&gt; TankManager.PlayerNumber</td></tr>
+<tr class="memdesc:a9d5a96a6f6e32452823c112d7aa8e483"><td class="mdescLeft">&#160;</td><td class="mdescRight">プレイヤー番号 <br /></td></tr>
+<tr class="separator:a9d5a96a6f6e32452823c112d7aa8e483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cb02d2e7f4c33473bd164e3de69b52a"><td class="memItemLeft" align="right" valign="top"><a id="a8cb02d2e7f4c33473bd164e3de69b52a"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tank_manager_1_1_tank_services.html#a8cb02d2e7f4c33473bd164e3de69b52a">Health</a> =&gt; TankManager.Health.Health</td></tr>
+<tr class="memdesc:a8cb02d2e7f4c33473bd164e3de69b52a"><td class="mdescLeft">&#160;</td><td class="mdescRight">戦車の耐久力 <br /></td></tr>
+<tr class="separator:a8cb02d2e7f4c33473bd164e3de69b52a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f3188c9f761be424217573479de2ce7"><td class="memItemLeft" align="right" valign="top"><a id="a5f3188c9f761be424217573479de2ce7"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tank_manager_1_1_tank_services.html#a5f3188c9f761be424217573479de2ce7">Energy</a> =&gt; TankManager.Energy</td></tr>
+<tr class="memdesc:a5f3188c9f761be424217573479de2ce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">戦車の残エネルギー <br /></td></tr>
+<tr class="separator:a5f3188c9f761be424217573479de2ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fbca3b3b47daafbcd9b5b50f4d2aee9"><td class="memItemLeft" align="right" valign="top"><a id="a5fbca3b3b47daafbcd9b5b50f4d2aee9"></a>
+Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tank_manager_1_1_tank_services.html#a5fbca3b3b47daafbcd9b5b50f4d2aee9">Position</a> =&gt; TankManager.Instance.transform.position</td></tr>
+<tr class="memdesc:a5fbca3b3b47daafbcd9b5b50f4d2aee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">戦車の位置 <br /></td></tr>
+<tr class="separator:a5fbca3b3b47daafbcd9b5b50f4d2aee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab53a97a1e4800d7c7e3b10a7e6ddd141"><td class="memItemLeft" align="right" valign="top"><a id="ab53a97a1e4800d7c7e3b10a7e6ddd141"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tank_manager_1_1_tank_services.html#ab53a97a1e4800d7c7e3b10a7e6ddd141">Angle</a> =&gt; TankManager.Instance.transform.rotation.eulerAngles.y</td></tr>
+<tr class="memdesc:ab53a97a1e4800d7c7e3b10a7e6ddd141"><td class="mdescLeft">&#160;</td><td class="mdescRight">戦車の向き <br /></td></tr>
+<tr class="separator:ab53a97a1e4800d7c7e3b10a7e6ddd141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>戦車AI用サービスクラス </p>
+
+<p class="definition"> <a class="el" href="_tank_services_8cs_source.html">TankServices.cs</a> の <a class="el" href="_tank_services_8cs_source.html#l00013">13</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">メソッド詳解</h2>
+<a id="a501bf6996e62d626f5c05c91e1176204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a501bf6996e62d626f5c05c91e1176204">&#9670;&nbsp;</a></span>AngleTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float TankManager.TankServices.AngleTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tank_controller.html">TankController</a>&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定戦車がいる方向を求める </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>別の戦車 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>自分の向きからの相対角度(-180 ～ +180)(指定した戦車が存在しない時は 0.0f) </dd></dl>
+<dl class="section note"><dt>覚え書き</dt><dd>戻り値が負の時は向かって右側に、正の時は向かって左側に指定戦車があることになります。 </dd></dl>
+
+<p class="definition"> <a class="el" href="_tank_services_8cs_source.html">TankServices.cs</a> の <a class="el" href="_tank_services_8cs_source.html#l00058">58</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a0460df080d7db4eff50270a9bfdad567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0460df080d7db4eff50270a9bfdad567">&#9670;&nbsp;</a></span>DistanceTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float TankManager.TankServices.DistanceTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tank_controller.html">TankController</a>&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定戦車との距離を求める </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>別の戦車 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>指定した別の戦車との距離(指定した戦車が存在しない時は 0.0f) </dd></dl>
+
+<p class="definition"> <a class="el" href="_tank_services_8cs_source.html">TankServices.cs</a> の <a class="el" href="_tank_services_8cs_source.html#l00048">48</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="afeff0939c4123ef6fa336803e80098f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeff0939c4123ef6fa336803e80098f7">&#9670;&nbsp;</a></span>GetNearestShell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_shell_explosion.html">ShellExplosion</a> TankManager.TankServices.GetNearestShell </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>一番近い敵の砲弾を取得する </p>
+<dl class="section return"><dt>戻り値</dt><dd>敵の砲弾(無ければ null) </dd></dl>
+
+<p class="definition"> <a class="el" href="_tank_services_8cs_source.html">TankServices.cs</a> の <a class="el" href="_tank_services_8cs_source.html#l00077">77</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a76609dc547d30de8fac06eb2167ec05d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76609dc547d30de8fac06eb2167ec05d">&#9670;&nbsp;</a></span>GetNearestTank()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_tank_controller.html">TankController</a> TankManager.TankServices.GetNearestTank </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>一番近い敵戦車を取得する </p>
+<dl class="section return"><dt>戻り値</dt><dd>一番近い敵戦車(無ければ null) </dd></dl>
+
+<p class="definition"> <a class="el" href="_tank_services_8cs_source.html">TankServices.cs</a> の <a class="el" href="_tank_services_8cs_source.html#l00068">68</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ac6d6e0eb543c78e33bc81b37cc1675d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6d6e0eb543c78e33bc81b37cc1675d6">&#9670;&nbsp;</a></span>GetTank()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_tank_controller.html">TankController</a> TankManager.TankServices.GetTank </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>playerNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定プレイヤー番号の戦車を取得する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">playerNumber</td><td>プレイヤー番号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>指定したプレイヤー番号の戦車(存在しない時は null) </dd></dl>
+
+<p class="definition"> <a class="el" href="_tank_services_8cs_source.html">TankServices.cs</a> の <a class="el" href="_tank_services_8cs_source.html#l00038">38</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ab98e3f27dbf3dbfaebfb5231dd8a52ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab98e3f27dbf3dbfaebfb5231dd8a52ea">&#9670;&nbsp;</a></span>IsMine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TankManager.TankServices.IsMine </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_shell_explosion.html">ShellExplosion</a>&#160;</td>
+          <td class="paramname"><em>shell</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定砲弾が自分が撃ったモノか否か </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">shell</td><td>砲弾 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>自分が撃った砲弾 </td></tr>
+    <tr><td class="paramname">false</td><td>自分が撃った砲弾ではない </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_tank_services_8cs_source.html">TankServices.cs</a> の <a class="el" href="_tank_services_8cs_source.html#l00090">90</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Assets/Scripts/Tank/<a class="el" href="_tank_services_8cs_source.html">TankServices.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_tank_manager.html">TankManager</a></li><li class="navelem"><a class="el" href="class_tank_manager_1_1_tank_services.html">TankServices</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
+  </ul>
+</div>
+</body>
+</html>

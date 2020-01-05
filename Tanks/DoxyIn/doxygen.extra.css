@@ -1,0 +1,52 @@
+/* サイドナビ*/
+#nav-tree {
+    padding: 0px 0px;
+    background-image: none;
+    background-color: #333333;
+    font-size: 14px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; /* iOS 5+ */
+}
+
+.ui-resizable-e {
+    background-image: none;
+    background-color: #000000;
+    background-attachment: scroll;
+    cursor: ew-resize;
+    height: 100%;
+    right: 0;
+    top: 0;
+    width: 6px;
+}
+
+/* メインナビ */
+.sm-dox {
+    padding: 0 10px;
+    background-image: none;
+    background-color: #C6AE64;
+    line-height: 36px;
+    border-radius: 0.5em;
+}
+
+    .sm-dox ul {
+        background-color: #111111;
+    }
+
+        .sm-dox ul a {
+            background-image: none;
+            background-color: #111111;
+            color: #C2AC6B;
+        }
+
+            .sm-dox ul a:focus, .sm-dox ul a:hover, .sm-dox ul a:active {
+                color: #FCF0C0;
+            }
+
+            .sm-dox ul a.highlighted {
+                color: #FCFCC0;
+            }
+
+/* 検索ボックス */
+.MSearchBoxInactive {
+    background-color: #C6AE64;
+}

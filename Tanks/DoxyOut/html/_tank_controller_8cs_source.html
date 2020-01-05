@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TANKS!AIバトル: Assets/Scripts/Tank/TankController.cs ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.extra.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TANKS!AIバトル
+   </div>
+   <div id="projectbrief">Unity公式チュートリアル「TANKS!」をベースにAI対戦ができるようにしたプロジェクト</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_tank_controller_8cs_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">TankController.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> UnityEngine;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_tank_controller.html">    9</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_tank_controller.html">TankController</a></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_tank_controller.html#a3e60ac1509b3c8fb4c415dfbb7892562">   12</a></span>&#160;    <a class="code" href="interface_i_tank_movement.html">ITankMovement</a> <a class="code" href="class_tank_controller.html#a3e60ac1509b3c8fb4c415dfbb7892562">Movement</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_tank_controller.html#acf5b74d38f265e270e58e33052404fad">   14</a></span>&#160;    <a class="code" href="interface_i_tank_turrent.html">ITankTurrent</a> <a class="code" href="class_tank_controller.html#acf5b74d38f265e270e58e33052404fad">Turrent</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_tank_controller.html#a67ed7d63d629f9a8e9b05da97a86bdec">   17</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_tank_manager.html">TankManager</a>.<a class="code" href="class_tank_manager_1_1_tank_services.html">TankServices</a> <a class="code" href="class_tank_controller.html#a67ed7d63d629f9a8e9b05da97a86bdec">Services</a> { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_tank_controller.html#a4cbb12a3c83d95921a95f2dfe5204ed8">   22</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_tank_controller.html#a4cbb12a3c83d95921a95f2dfe5204ed8">TankController</a>(<a class="code" href="class_tank_manager.html">TankManager</a> manager)</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="class_tank_controller.html#a67ed7d63d629f9a8e9b05da97a86bdec">Services</a> = manager.Services;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="comment">// 戦車インターフェースの取得</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="class_tank_controller.html#a3e60ac1509b3c8fb4c415dfbb7892562">Movement</a> = manager as <a class="code" href="interface_i_tank_movement.html">ITankMovement</a>;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="class_tank_controller.html#acf5b74d38f265e270e58e33052404fad">Turrent</a> = manager as <a class="code" href="interface_i_tank_turrent.html">ITankTurrent</a>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_tank_controller.html#aa1a1304bc899b6ce3e092a30b7a32cc0">Move</a>(<span class="keywordtype">bool</span> isForward, <span class="keywordtype">bool</span> isLeft, <span class="keywordtype">bool</span> isRight) =&gt; <a class="code" href="class_tank_controller.html#a3e60ac1509b3c8fb4c415dfbb7892562">Movement</a>.<a class="code" href="interface_i_tank_movement.html#a53a5f2930a595c92073a922c7c5d398a">Move</a>(isForward, isLeft, isRight);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_tank_controller.html#ada580def754febdd56760e7001530668">Aim</a>(<span class="keywordtype">float</span> yaw, <span class="keywordtype">float</span> pitch) =&gt; <a class="code" href="class_tank_controller.html#acf5b74d38f265e270e58e33052404fad">Turrent</a>.<a class="code" href="interface_i_tank_turrent.html#af7e481692ddf3425a6d8cf9d066c4ab4">Aim</a>(yaw, pitch);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_tank_controller.html#a1f3b37088ec35d7e70a6252656bb7d4f">Fire</a>(<span class="keywordtype">int</span> force) =&gt; <a class="code" href="class_tank_controller.html#acf5b74d38f265e270e58e33052404fad">Turrent</a>.<a class="code" href="interface_i_tank_turrent.html#ab95943873576cba2a63826cd3d4d5080">Fire</a>(force);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div><div class="ttc" id="interface_i_tank_movement_html"><div class="ttname"><a href="interface_i_tank_movement.html">ITankMovement</a></div><div class="ttdoc">戦車の移動を制御するためのインターフェース</div><div class="ttdef"><b>Definition:</b> <a href="_i_tank_interfaces_8cs_source.html#l00004">ITankInterfaces.cs:4</a></div></div>
+<div class="ttc" id="interface_i_tank_turrent_html"><div class="ttname"><a href="interface_i_tank_turrent.html">ITankTurrent</a></div><div class="ttdoc">戦車の砲塔を制御するためのインターフェース</div><div class="ttdef"><b>Definition:</b> <a href="_i_tank_interfaces_8cs_source.html#l00020">ITankInterfaces.cs:20</a></div></div>
+<div class="ttc" id="class_tank_controller_html_a1f3b37088ec35d7e70a6252656bb7d4f"><div class="ttname"><a href="class_tank_controller.html#a1f3b37088ec35d7e70a6252656bb7d4f">TankController.Fire</a></div><div class="ttdeci">void Fire(int force)</div><div class="ttdoc">砲弾を発射</div></div>
+<div class="ttc" id="interface_i_tank_movement_html_a53a5f2930a595c92073a922c7c5d398a"><div class="ttname"><a href="interface_i_tank_movement.html#a53a5f2930a595c92073a922c7c5d398a">ITankMovement.Move</a></div><div class="ttdeci">void Move(bool isForward, bool isLeft, bool isRight)</div><div class="ttdoc">戦車の移動</div></div>
+<div class="ttc" id="class_tank_controller_html_acf5b74d38f265e270e58e33052404fad"><div class="ttname"><a href="class_tank_controller.html#acf5b74d38f265e270e58e33052404fad">TankController.Turrent</a></div><div class="ttdeci">ITankTurrent Turrent</div><div class="ttdoc">戦車の砲塔制御インターフェース</div><div class="ttdef"><b>Definition:</b> <a href="_tank_controller_8cs_source.html#l00014">TankController.cs:14</a></div></div>
+<div class="ttc" id="class_tank_manager_1_1_tank_services_html"><div class="ttname"><a href="class_tank_manager_1_1_tank_services.html">TankManager.TankServices</a></div><div class="ttdoc">戦車AI用サービスクラス</div><div class="ttdef"><b>Definition:</b> <a href="_tank_services_8cs_source.html#l00013">TankServices.cs:13</a></div></div>
+<div class="ttc" id="interface_i_tank_turrent_html_af7e481692ddf3425a6d8cf9d066c4ab4"><div class="ttname"><a href="interface_i_tank_turrent.html#af7e481692ddf3425a6d8cf9d066c4ab4">ITankTurrent.Aim</a></div><div class="ttdeci">void Aim(float yaw, float pitch)</div><div class="ttdoc">砲塔の転回</div></div>
+<div class="ttc" id="class_tank_controller_html_ada580def754febdd56760e7001530668"><div class="ttname"><a href="class_tank_controller.html#ada580def754febdd56760e7001530668">TankController.Aim</a></div><div class="ttdeci">void Aim(float yaw, float pitch)</div><div class="ttdoc">砲塔の転回</div></div>
+<div class="ttc" id="class_tank_controller_html"><div class="ttname"><a href="class_tank_controller.html">TankController</a></div><div class="ttdoc">戦車制御クラス</div><div class="ttdef"><b>Definition:</b> <a href="_tank_controller_8cs_source.html#l00009">TankController.cs:9</a></div></div>
+<div class="ttc" id="class_tank_controller_html_a3e60ac1509b3c8fb4c415dfbb7892562"><div class="ttname"><a href="class_tank_controller.html#a3e60ac1509b3c8fb4c415dfbb7892562">TankController.Movement</a></div><div class="ttdeci">ITankMovement Movement</div><div class="ttdoc">戦車の移動制御インターフェース</div><div class="ttdef"><b>Definition:</b> <a href="_tank_controller_8cs_source.html#l00012">TankController.cs:12</a></div></div>
+<div class="ttc" id="class_tank_controller_html_a4cbb12a3c83d95921a95f2dfe5204ed8"><div class="ttname"><a href="class_tank_controller.html#a4cbb12a3c83d95921a95f2dfe5204ed8">TankController.TankController</a></div><div class="ttdeci">TankController(TankManager manager)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> <a href="_tank_controller_8cs_source.html#l00022">TankController.cs:22</a></div></div>
+<div class="ttc" id="interface_i_tank_turrent_html_ab95943873576cba2a63826cd3d4d5080"><div class="ttname"><a href="interface_i_tank_turrent.html#ab95943873576cba2a63826cd3d4d5080">ITankTurrent.Fire</a></div><div class="ttdeci">void Fire(int force)</div><div class="ttdoc">砲弾を発射</div></div>
+<div class="ttc" id="class_tank_controller_html_a67ed7d63d629f9a8e9b05da97a86bdec"><div class="ttname"><a href="class_tank_controller.html#a67ed7d63d629f9a8e9b05da97a86bdec">TankController.Services</a></div><div class="ttdeci">TankManager.TankServices Services</div><div class="ttdoc">AI用サービスクラス</div><div class="ttdef"><b>Definition:</b> <a href="_tank_controller_8cs_source.html#l00017">TankController.cs:17</a></div></div>
+<div class="ttc" id="class_tank_manager_html"><div class="ttname"><a href="class_tank_manager.html">TankManager</a></div><div class="ttdoc">戦車マネージャークラス</div><div class="ttdef"><b>Definition:</b> <a href="_tank_manager_8cs_source.html#l00007">TankManager.cs:7</a></div></div>
+<div class="ttc" id="class_tank_controller_html_aa1a1304bc899b6ce3e092a30b7a32cc0"><div class="ttname"><a href="class_tank_controller.html#aa1a1304bc899b6ce3e092a30b7a32cc0">TankController.Move</a></div><div class="ttdeci">void Move(bool isForward, bool isLeft, bool isRight)</div><div class="ttdoc">戦車の移動</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_f13b41af88cf68434578284aaf699e39.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_01159ff0c84f15fc5f7c99f7fe7c23f2.html">Tank</a></li><li class="navelem"><b>TankController.cs</b></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
+  </ul>
+</div>
+</body>
+</html>

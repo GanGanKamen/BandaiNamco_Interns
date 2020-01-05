@@ -1,0 +1,8 @@
+〇ドキュメントの在処
+file:\\C:\UnityProjects\Tanks\DoxyOut\html\index.html
+
+
+〇マイ戦車のひな形を作成する
+C:\UnityProjects\Tanks フォルダの中にある MakePlayerTank.bat を管理者権限で実行！
+
+※管理者権限で実行　＝　エクスプローラーで MakePlayerTank.bat を右クリックしたメニューの中にある

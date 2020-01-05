@@ -1,0 +1,11 @@
+﻿/// @mainpage		TANKS! AIバトル 解説
+/// @section		about		TANKS! AIバトル とは
+/// Unityの公式チュートリアル「TANKS!」をベースに、AI対戦ができるように改造を加えたプロジェクトです。@n
+///
+/// @subsection		specs		仕様書
+/// - @subpage		spec
+/// - @subpage		techspec
+///
+/// @subsection		misc		その他もろもろ
+///	開発に使った Unity のバージョンは 2019.2.7f2 です。@n
+/// Unity 標準の機能、アセットのみで実装されています。@n
